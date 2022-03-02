@@ -1,13 +1,14 @@
 import { DripsyProvider } from 'dripsy'
 
-import { theme } from 'app/dripsyTheme'
+import Navigation from '@/mobile/navigation'
+import theme from '@/app/dripsyTheme'
 
-import Navigation from "./navigation";
-
-export default function App() {
+const App: React.FC = () => {
   return (
     <DripsyProvider theme={theme}>
       <Navigation />
     </DripsyProvider>
   )
 }
+
+export default App

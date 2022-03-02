@@ -1,37 +1,41 @@
-import * as Linking from "expo-linking";
-import { NavigationContainer, LinkingOptions } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import ScreenOne from "app/screens/ScreenOne";
-import ScreenTwo from "app/screens/ScreenTwo";
+import * as Linking from 'expo-linking'
+import { LinkingOptions, NavigationContainer } from '@react-navigation/native'
 import { SafeAreaView } from 'dripsy'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+
+import About from '@/app/screens/About'
+import Home from '@/app/screens/Home'
 
 interface RootParmList {
-  ScreenOne: undefined;
-  ScreenTwo: undefined;
+  Home: undefined
+  About: undefined
 }
-const prefix = Linking.createURL("/");
+const prefix = Linking.createURL('/')
 const linking: LinkingOptions<RootParmList> = {
   prefixes: [prefix],
   config: {
     screens: {
-      ScreenOne: "/screen-one",
-      ScreenTwo: "/screen-two",
+      Home: '/home',
+      About: '/about',
     },
   },
-};
+}
 
-const Stack = createNativeStackNavigator();
-export default function RootNavigation() {
+const Stack = createNativeStackNavigator()
+const RootNavigation: React.FC = () => {
   return (
-    <SafeAreaView
-      style={{ flex: 1 }}
-    >
+    <SafeAreaView style={{ flex: 1 }}>
       <NavigationContainer linking={linking}>
-        <Stack.Navigator initialRouteName="ScreenOne" screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="ScreenOne" component={ScreenOne} />
-          <Stack.Screen name="ScreenTwo" component={ScreenTwo} />
+        <Stack.Navigator
+          initialRouteName="Home"
+          screenOptions={{ headerShown: false }}
+        >
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="About" component={About} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>
-  );
+  )
 }
+
+export default RootNavigation

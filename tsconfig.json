@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "preserve",
+    "strictNullChecks": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/app/*": [
+        "./workspaces/app/*"
+      ],
+      "@/mobile/*": [
+        "./workspaces/mobile/*"
+      ],
+      "@/web/*": [
+        "./workspaces/web/*"
+      ]
+    },
+    "allowJs": false
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

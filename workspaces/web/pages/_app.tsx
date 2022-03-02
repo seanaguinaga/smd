@@ -1,14 +1,15 @@
-import '../styles/globals.css'
+import 'raf/polyfill'
 import type { AppProps } from 'next/app'
 import { DripsyProvider } from 'dripsy'
-import { theme } from 'app/dripsyTheme'
-import 'raf/polyfill'
 
+import theme from '@/app/dripsyTheme'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <DripsyProvider theme={theme} ssr>
-    <Component {...pageProps} />
-  </DripsyProvider>
+const App: React.FC = ({ Component, pageProps }: AppProps) => {
+  return (
+    <DripsyProvider theme={theme} ssr>
+      <Component {...pageProps} />
+    </DripsyProvider>
+  )
 }
 
-export default MyApp
+export default App
