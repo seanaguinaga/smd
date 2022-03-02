@@ -2,7 +2,8 @@
   "scripts": {
     "dev:web": "yarn workspace web dev",
     "dev:mobile": "yarn workspace mobile start",
-    "dev:ios": "yarn workspace mobile ios"
+    "dev:ios": "yarn workspace mobile ios",
+    "dev:desktop": "yarn workspace desktop start"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.29.2",

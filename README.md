@@ -16,6 +16,7 @@ NextJS + Expo + easily styled/animated shared components = _very_ close to one c
 
 - `yarn dev:web`
 - `yarn dev:mobile` in another tab
+- `yarn dev:desktop` in another tab (after `dev:web` has fired up and http://localhost:3000 is available)
 
 ## Walkthrough
 
