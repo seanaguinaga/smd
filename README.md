@@ -23,6 +23,7 @@ NextJS + Expo + easily styled/animated shared components = _very_ close to one c
 - `workspaces/app` is where you make all your shared components
 - `workspaces/web` is your NextJS app
 - `workspaces/mobile` is your Expo app
+- `workspaces/desktop` is your Electron app
 
 ## Credit
 
