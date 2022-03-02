@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "run-p dev:*",
+    "dev:mobile": "yarn workspace mobile ios",
+    "dev:web": "yarn workspace web dev"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "workspaces": [
+    "workspaces/*"
+  ],
+  "private": "true"
+}

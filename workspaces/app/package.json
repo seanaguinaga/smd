@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@dripsy/core": "^3.6.0",
+    "dripsy": "^3.6.0",
+    "moti": "^0.17.1",
+    "react-native-reanimated": "^2.4.1",
+    "react-native-safe-area-context": "^4.1.1",
+    "solito": "^0.0.13"
+  },
+  "name": "app",
+  "version": "1.0.0",
+  "private": true
+}
