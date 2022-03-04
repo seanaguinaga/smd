@@ -1,10 +1,7 @@
-import { Button } from "ui";
+import HomeScreen from 'ui/screens/Home'
 
-export default function Web() {
-  return (
-    <div>
-      <h1>Web</h1>
-      <Button />
-    </div>
-  );
+const Home: React.FC = () => {
+  return <HomeScreen />
 }
+
+export default Home
