@@ -27,4 +27,5 @@ NextJS + Expo + easily styled/animated shared components = _very_ close to one c
 
 ## Credit
 
-Big thank you to [@kuk941025](https://github.com/kuk941025) for providing [most of the code](https://github.com/kuk941025/mono-solito-example) in this repo and helping me make sense of this stack. ❤️
+- [@nandorojo](https://github.com/nandorojo) for making all these wonderful cross-platform tools for us!
+- Big thank you to [@kuk941025](https://github.com/kuk941025) for providing [most of the code](https://github.com/kuk941025/mono-solito-example) in this repo and helping me make sense of this stack. ❤️
