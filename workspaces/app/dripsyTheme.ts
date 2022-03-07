@@ -1,6 +1,6 @@
 // https://www.dripsy.xyz/usage/theming/create
-import { Platform } from 'react-native'
 import { makeTheme } from 'dripsy'
+import { Platform } from 'react-native'
 
 const spaceSize = 4
 const fontSize = 12
@@ -54,7 +54,7 @@ const theme = makeTheme({
 type MyTheme = typeof theme
 
 declare module 'dripsy' {
-  type DripsyCustomTheme = MyTheme
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  interface DripsyCustomTheme extends MyTheme {}
 }
-
 export default theme
